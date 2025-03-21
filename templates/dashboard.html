@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Dashboard</title>
+</head>
+<body>
+    <h1>Evaluation Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>User</th>
+            <th>Domain</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        {% for eval in evaluations %}
+        <tr>
+            <td>{{ eval.user }}</td>
+            <td>{{ eval.domain }}</td>
+            <td>{{ eval.subject }}</td>
+            <td>{{ eval.score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back to Evaluation</a>
+</body>
+</html>

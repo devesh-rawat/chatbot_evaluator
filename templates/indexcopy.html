@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <style>
+    /* styles.css */
+@font-face {
+  font-family: "poppins";
+  src: url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap);
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* You can adjust the weight as needed */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
+.page1 {
+  background-image: url(/Group\ 2.png); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* full screen height */
+  color: white; /* optional, if your background is dark */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3vw;
+  width: 15vw;
+  padding: 0vw 2vw;
+  font-family: "poppins";
+  background-color: rgb(19, 19, 19);
+  border-radius: 54px;
+  margin-top: 4vw;
+  padding: 8px;
+}
+
+#nav h2 {
+  color: #ff4800;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1%;
+ 
+}
+
+#content {
+  
+  /* background-color: rgb(0, 255, 110); */
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%;
+  /* background-color: rgb(20, 20, 20); */
+}
+
+p {
+  color: rgb(29, 29, 29);
+  font-size: 1vw;
+  font-weight: 300;
+  /* margin-top: 0.5vw; */
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  color: rgb(23, 23, 23);
+  font-size: 5vw;
+  letter-spacing: -1px;
+  line-height: 95%;
+  font-weight: 600;
+  text-align: center;
+}
+
+button{
+  background-color: #ff6200;
+  color: #ffffff;
+  letter-spacing: 0.5%;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 1vw 2vw;
+  border-radius: 20px;
+  margin-top: 2vw;
+  border: none;
+  cursor: pointer;
+  font-family: poppins;
+  
+}
+
+
+
+button:hover {
+  /* background-color: #1000bf; */
+  border: #1000bf solid 1px;
+  color: #001261c3;
+}
+
+.page2{
+  height: 100vh;
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+/* 
+.page2 p{
+  color: white;
+  font-size: 1vw;
+  padding: 0vw 5vw;
+  font-weight: 300;
+  margin-top: 0.5vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+#btun{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3vw;
+  gap: 8px;
+}
+  </style>
+</head>
+<body>
+  <div class="page1">
+    <div id="nav">
+      <h2>STUDY BOT AI</h2>
+    </div>
+    <div id="content">
+      <h1>Now study at own pace and ,<br>
+        track performance  at one place</h1>
+        <p>Now one can study and track their learning using
+          <br>our AI powered study chatbot etc.</p>
+          <div id="btun">
+            <button onclick="window.location.href='/evaluation'">Start learning</button>
+            <!-- <button >Login</button> -->
+          </div>
+  
+    
+        </div>
+  </div>
+  <!-- <div class="page2">
+    <div id="content2">
+      <h1>Create your space now!</h1>
+      <p>You can create your space if you are a faculty or join <br>if you are a student simply
+        by signup or login.</p>
+        <button></button>
+    </div> -->
+  </div>
+
+
+
+  
+</body>
+</html>
